@@ -55,7 +55,7 @@
       `<label class="pill-opt"><input type="radio" name="day" value="${val}" ${i===1?'checked':''}><span class="box">${lab}<small>${sub}</small></span></label>`);
   }
   wrap.insertAdjacentHTML('beforeend',
-    `<label class="pill-opt"><input type="radio" name="day" value="custom"><span class="box">Later<small>pick date</small></span></label>`);
+    `<label class="pill-opt"><input type="radio" name="day" value="custom"><span class="box">Later<small>Pick a date</small></span></label>`);
   wrap.addEventListener('change',()=>{
     const custom = wrap.querySelector('input[value=custom]').checked;
     document.getElementById('customDateWrap').hidden = !custom;
@@ -128,7 +128,7 @@ form.addEventListener('click',e=>{
 /* ================= where booking requests go =================
    PRIMARY: WhatsApp — zero setup, always works. Put your business
    number below (international format, no + or spaces).            */
-const WHATSAPP_NUMBER = "34600000000";
+const WHATSAPP_NUMBER = "34641812908";
 
 /* OPTIONAL SECONDARY: also email you a copy via Formspree (free).
    Sign up at https://formspree.io, create a form, paste the ID
