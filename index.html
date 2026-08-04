@@ -2,126 +2,240 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F8F9F6">
 <title>CleanCleaning — Home cleaning and organisation in Barcelona</title>
 <meta name="description" content="Professional home cleaning and organisation in Barcelona. Fixed price, nothing charged until we confirm. Book in a minute.">
 <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://api.fontshare.com/v2/css?f[]=author@500,600&f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -2 46 41"><circle cx="14" cy="18" r="13.6" fill="%23C9FF4F" stroke="%230D071C" stroke-width="1.6"/><circle cx="34" cy="29.3" r="7" fill="%23C9FF4F" stroke="%230D071C" stroke-width="1.5"/><circle cx="29.5" cy="4.5" r="3.9" fill="%23C9FF4F" stroke="%230D071C" stroke-width="1.2"/></svg>'>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="canvas" aria-hidden="true"></div>
-<div class="veil" aria-hidden="true"></div>
+<div class="field" id="field" aria-hidden="true"></div>
+<div class="rise" id="rise" aria-hidden="true"></div>
 
-
-<header>
-  <div class="wrap bar">
-    <a class="logo" href="#">
-      <span class="dot" aria-hidden="true">
-        <svg viewBox="0 0 40 40" width="24" height="24">
-          <circle cx="16" cy="24" r="11" fill="#C9FF4F" stroke="#141B16" stroke-width="2.4"/>
-          <path d="M9.5 20.5 Q11 15.5 16.5 14.5" fill="none" stroke="#141B16" stroke-width="1.8" stroke-linecap="round"/>
-          <circle cx="29.5" cy="10.5" r="4.5" fill="none" stroke="#141B16" stroke-width="2.2"/>
-          <circle cx="31" cy="25" r="6" fill="#C9FF4F" stroke="#141B16" stroke-width="2.2"/>
-        </svg>
-      </span>
-    </a>
-    <nav class="navlinks">
-      <a href="#process">Process</a>
-      <a href="#faqs">FAQs</a>
-    </nav>
-  </div>
-</header>
+<div class="app">
 <main>
-<section class="hero">
-  <div class="wrap">
-    <span class="tag">Now in Barcelona</span>
-    <h1>One less thing <br> to think about.</h1>
-    <p class="sub">Professional home cleaning and organisation</p>
-    <!-- booking card -->
-    <div class="card" id="card">
-      <div class="card-top">
-        <button class="back" id="backBtn" type="button" hidden aria-label="Go back">< Go back</button>
-        <div class="meta">
-          <span class="step-count">STEP 1 OF 3</span>
-          <span class="step-title" id="stepTitle">Your clean</span>
+
+  <!-- ================= TAB 1 · INFO ================= -->
+  <section class="panel" id="panel-info" role="tabpanel" aria-labelledby="tab-info" tabindex="-1">
+
+    <!-- the mark, alone, floating -->
+    <a class="mark" href="#info" id="mark" aria-label="CleanCleaning">
+      <svg width="44" height="39" viewBox="-4 -4 50 45" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" overflow="visible">
+        <g class="b3">
+          <path d="M34.0551 36.0265C37.7811 36.0265 40.8016 33.0055 40.8016 29.2789C40.8016 25.5523 37.7811 22.5312 34.0551 22.5312C30.3291 22.5312 27.3086 25.5523 27.3086 29.2789C27.3086 33.0055 30.3291 36.0265 34.0551 36.0265Z" fill="#C9FF4F" stroke="#0D071C" stroke-width="1.5"/>
+          <path d="M30.8691 26.1357C31.1743 25.8035 31.5143 25.5695 31.8124 25.4561C32.1178 25.3398 32.3415 25.3621 32.4613 25.4723C32.5809 25.5824 32.6218 25.8034 32.5316 26.1175C32.4432 26.424 32.2384 26.7826 31.9331 27.1146C31.6276 27.4466 31.2875 27.6807 30.9895 27.7942C30.6841 27.9104 30.4604 27.888 30.3409 27.778C30.221 27.6678 30.1801 27.4467 30.2705 27.1325C30.3586 26.8262 30.5635 26.4678 30.8691 26.1357Z" fill="white"/>
+        </g>
+        <g class="b1">
+          <path d="M14.0528 31.2077C21.3717 31.2077 27.3048 25.2734 27.3048 17.9534C27.3048 10.6333 21.3717 4.69922 14.0528 4.69922C6.7339 4.69922 0.800781 10.6333 0.800781 17.9534C0.800781 25.2734 6.7339 31.2077 14.0528 31.2077Z" fill="#C9FF4F" stroke="#0D071C" stroke-width="1.6"/>
+          <path d="M8.42905 12.3278C9.42761 11.4101 9.86521 10.2614 9.40645 9.76207C8.94768 9.26269 7.76629 9.60177 6.76773 10.5194C5.76917 11.437 5.33158 12.5858 5.79035 13.0851C6.24911 13.5845 7.43049 13.2454 8.42905 12.3278Z" fill="white"/>
+        </g>
+        <g class="b2">
+          <path d="M29.4723 8.3131C31.6016 8.3131 33.3275 6.5868 33.3275 4.45734C33.3275 2.32785 31.6016 0.601562 29.4723 0.601562C27.3431 0.601562 25.6172 2.32785 25.6172 4.45734C25.6172 6.5868 27.3431 8.3131 29.4723 8.3131Z" fill="#C9FF4F" stroke="#0D071C" stroke-width="1.2"/>
+          <path d="M27.7697 2.75395C27.9442 2.57285 28.135 2.44883 28.2976 2.39123C28.4681 2.3309 28.57 2.35387 28.6151 2.39752C28.6605 2.44111 28.6871 2.54213 28.6332 2.71458C28.5815 2.87934 28.4647 3.07456 28.2902 3.25565C28.1156 3.43674 27.9249 3.56078 27.7622 3.61839C27.592 3.67864 27.4901 3.65568 27.4448 3.61209C27.3996 3.56842 27.3728 3.46747 27.4267 3.29502C27.4783 3.13025 27.5952 2.93506 27.7697 2.75395Z" fill="white"/>
+        </g>
+      </svg>
+    </a>
+
+    <div class="hero">
+      <span class="eyebrow">Now in Barcelona</span>
+      <h1>One less thing<br>to think about.</h1>
+      <p class="sub">Professional home cleaning and organisation</p>
+      <button class="btn hero-cta" type="button" data-goto-tab="book">Book a clean · from €39
+        <svg class="arr" width="15" height="11" viewBox="0 0 15 11" fill="none"><path d="M9 1L14 5.5L9 10M14 5.5H0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <p class="trustline">Fast booking · Fixed price · Free cancel 24h</p>
+    </div>
+
+    <h2 class="sec">What's included</h2>
+    <div class="svc">
+      <div class="svc-row">
+        <div class="svc-head">
+          <h3>Standard</h3><span class="svc-p">from €39</span>
         </div>
-        <!-- <span class="timebadge">~ 1 MIN</span> -->
+        <ul class="ticks">
+          <li>Kitchen</li><li>Bathrooms</li><li>Floors</li><li>Dusting</li>
+        </ul>
+      </div>
+      <div class="svc-row">
+        <div class="svc-head">
+          <h3>Deep</h3><span class="svc-p">+€35</span>
+        </div>
+        <p class="svc-note">Everything in Standard, plus</p>
+        <ul class="ticks">
+          <li>Oven</li><li>Fridge</li><li>Limescale</li><li>Skirting boards</li>
+        </ul>
+      </div>
+      <div class="svc-row">
+        <div class="svc-head">
+          <h3>Move-out</h3><span class="svc-p">+€55</span>
+        </div>
+        <p class="svc-note">Everything in Deep, plus</p>
+        <ul class="ticks">
+          <li>Inside cupboards</li><li>Deposit-back standard</li>
+        </ul>
+      </div>
+      <div class="svc-row">
+        <div class="svc-head">
+          <h3>Home organisation</h3><span class="svc-p">quoted individually</span>
+        </div>
+        <p class="svc-note">Tell us what you need and we'll price it on WhatsApp</p>
+        <ul class="ticks">
+          <li>Wardrobes</li><li>Kitchen cupboards</li><li>Shelves &amp; storage</li><li>Decluttering</li>
+        </ul>
+      </div>
+    </div>
+    <p class="facts">All prices VAT included · You pay only after we confirm your slot</p>
+
+    <h2 class="sec">How it works</h2>
+    <ol class="steps">
+      <li class="tile"><span class="n">01 · BOOK</span><h3>A minute, no account</h3><p>Pick your flat size and clean type. The full price is on screen before you type a single letter.</p></li>
+      <li class="tile"><span class="n">02 · CONFIRM</span><h3>We reply within the hour</h3><p>You get a WhatsApp confirming your slot with a secure payment link. Nothing is charged before that.</p></li>
+      <li class="tile"><span class="n">03 · RELAX</span><h3>Come home to clean</h3><p>Your cleaner arrives in the window with everything they need, and messages you when it's done.</p></li>
+    </ol>
+
+    <h2 class="sec">Fair questions</h2>
+    <div class="qas">
+      <details class="qa"><summary>When do I pay?<i></i></summary><div class="ans"><div><p>After we confirm your slot. You'll get a secure payment link by WhatsApp or email — pay it and you're booked. Never cash, never on the day.</p></div></div></details>
+      <details class="qa"><summary>Is the price really fixed?<i></i></summary><div class="ans"><div><p>Yes. The price you see at booking is the price you pay — VAT included. If your flat needs more time than expected, that's on us, not you.</p></div></div></details>
+      <details class="qa"><summary>What if I'm not happy with the clean?<i></i></summary><div class="ans"><div><p>Tell us within 48 hours on the same WhatsApp chat — we'll sort it out directly with you.</p></div></div></details>
+      <details class="qa"><summary>Do I need to be home?<i></i></summary><div class="ans"><div><p>No — most clients aren't. Leave key instructions in the confirmation chat and we'll take it from there.</p></div></div></details>
+      <details class="qa"><summary>Can I cancel or move my booking?<i></i></summary><div class="ans"><div><p>Free up to 24 hours before your window, from the same WhatsApp chat.</p></div></div></details>
+    </div>
+
+    <!-- ask row — WhatsApp today, assistant later via handleAsk() -->
+    <div class="ask">
+      <input type="text" id="askInput" placeholder="Anything else? Ask us…" autocomplete="off" aria-label="Ask a question">
+      <button class="send" id="askSend" type="button" aria-label="Send question on WhatsApp">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h11M9 3.5 13.5 8 9 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+    <p class="ask-note">Straight to our WhatsApp — we usually reply within the hour.</p>
+
+    <p class="legal">CleanCleaning · Barcelona · <a href="mailto:hola@cleancleaning.es">hola@cleancleaning.es</a></p>
+  </section>
+
+  <!-- ================= TAB 2 · BOOK ================= -->
+  <section class="panel" id="panel-book" role="tabpanel" aria-labelledby="tab-book" tabindex="-1" hidden>
+
+    <div class="card">
+      <div class="card-top">
+        <button class="back" id="backBtn" type="button" hidden aria-label="Go back">
+          <svg width="15" height="12" viewBox="0 0 15 12" fill="none"><path d="M6 1L1 6l5 5M1 6h13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="meta">
+          <span class="step-count">Step 1 of 3</span>
+          <h2 class="step-title" id="stepTitle">Your clean</h2>
+        </div>
       </div>
       <div class="progress"><i id="progressBar"></i></div>
 
       <form id="bookForm" novalidate>
         <div class="card-body">
 
-          <!-- STEP 1 · zero typing -->
           <fieldset data-step="1">
-            <div class="field">
+            <div class="fld">
               <p class="q">Bedrooms</p>
               <div class="pills">
-                <label class="pill-opt"><input type="radio" name="size" value="1 bedroom" data-price="39" checked><span class="box">1<small>€39</small></span></label>
-                <label class="pill-opt"><input type="radio" name="size" value="2 bedrooms" data-price="52"><span class="box">2<small>€52</small></span></label>
-                <label class="pill-opt"><input type="radio" name="size" value="3 bedrooms" data-price="66"><span class="box">3<small>€66</small></span></label>
-                <label class="pill-opt"><input type="radio" name="size" value="4+ bedrooms" data-price="82"><span class="box">4+<small>€82</small></span></label>
+                <label class="pill"><input type="radio" name="size" value="1 bedroom" data-price="39" checked><span class="box">1<small>€39</small></span></label>
+                <label class="pill"><input type="radio" name="size" value="2 bedrooms" data-price="52"><span class="box">2<small>€52</small></span></label>
+                <label class="pill"><input type="radio" name="size" value="3 bedrooms" data-price="66"><span class="box">3<small>€66</small></span></label>
+                <label class="pill"><input type="radio" name="size" value="4+ bedrooms" data-price="82"><span class="box">4+<small>€82</small></span></label>
               </div>
             </div>
-            <div class="field">
+            <div class="fld">
+              <p class="q">Bathrooms</p>
+              <div class="pills three">
+                <label class="pill"><input type="radio" name="bathrooms" value="1 bathroom" checked><span class="box">1</span></label>
+                <label class="pill"><input type="radio" name="bathrooms" value="2 bathrooms"><span class="box">2</span></label>
+                <label class="pill"><input type="radio" name="bathrooms" value="3+ bathrooms"><span class="box">3+</span></label>
+              </div>
+            </div>
+            <div class="fld">
               <p class="q">Type of clean</p>
               <div class="opts">
                 <label class="opt"><input type="radio" name="service" value="Standard clean" data-price="0" checked>
-                  <span class="box"><span class="radio"></span>
+                  <span class="box"><span class="dot"></span>
                     <span class="t"><b>Standard</b><small>Kitchen, bathrooms, floors, dusting</small></span>
                     <span class="p">included</span></span></label>
                 <label class="opt"><input type="radio" name="service" value="Deep clean" data-price="35">
-                  <span class="box"><span class="radio"></span>
+                  <span class="box"><span class="dot"></span>
                     <span class="t"><b>Deep</b><small>+ oven, fridge, limescale, skirting boards</small></span>
                     <span class="p">+€35</span></span></label>
                 <label class="opt"><input type="radio" name="service" value="Move-out clean" data-price="55">
-                  <span class="box"><span class="radio"></span>
+                  <span class="box"><span class="dot"></span>
                     <span class="t"><b>Move-out</b><small>Deposit-back standard, inside cupboards</small></span>
                     <span class="p">+€55</span></span></label>
               </div>
             </div>
+            <div class="fld">
+              <p class="q">Extras <span class="q-soft">· optional</span></p>
+              <div class="chks" id="extras">
+                <label class="chk"><input type="checkbox" name="extra" value="Inside oven" data-price="12" data-included="Deep clean,Move-out clean"><span class="box"><span class="tick" aria-hidden="true"></span>Inside oven<small>+€12</small></span></label>
+                <label class="chk"><input type="checkbox" name="extra" value="Inside fridge" data-price="10" data-included="Deep clean,Move-out clean"><span class="box"><span class="tick" aria-hidden="true"></span>Inside fridge<small>+€10</small></span></label>
+                <label class="chk"><input type="checkbox" name="extra" value="Interior windows" data-price="12"><span class="box"><span class="tick" aria-hidden="true"></span>Interior windows<small>+€12</small></span></label>
+                <label class="chk"><input type="checkbox" name="extra" value="Ironing" data-price="15"><span class="box"><span class="tick" aria-hidden="true"></span>Ironing<small>+€15</small></span></label>
+              </div>
+              <p class="assure" id="extrasNote" hidden></p>
+            </div>
+            <div class="fld">
+              <p class="q">Cleaning products</p>
+              <div class="pills two">
+                <label class="pill"><input type="radio" name="materials" value="I have cleaning products" data-price="0" checked><span class="box">I have them<small>Sprays &amp; cloths</small></span></label>
+                <label class="pill"><input type="radio" name="materials" value="Please bring products" data-price="6"><span class="box">Bring yours<small>+€6</small></span></label>
+              </div>
+            </div>
+            <div class="fld">
+              <p class="q">Vacuum &amp; mop at home?</p>
+              <div class="pills two">
+                <label class="pill"><input type="radio" name="equipment" value="Vacuum and mop available" checked><span class="box">Yes<small>Ready to use</small></span></label>
+                <label class="pill"><input type="radio" name="equipment" value="No vacuum or mop"><span class="box">No<small>We’ll sort it</small></span></label>
+              </div>
+              <p class="assure" id="equipNote" hidden>No problem — we'll sort out equipment with you on WhatsApp before the clean.</p>
+            </div>
           </fieldset>
 
-          <!-- STEP 2 · when & where -->
           <fieldset data-step="2" hidden>
-            <div class="field">
+            <div class="fld">
               <p class="q">Day</p>
               <div class="pills" id="dayChips"></div>
             </div>
-            <div class="field" id="customDateWrap" hidden>
+            <div class="fld" id="customDateWrap" hidden>
               <label class="lbl" for="date">Pick a date</label>
               <input type="date" id="date" name="date">
             </div>
-            <div class="field">
+            <div class="fld">
               <p class="q">Arrival window</p>
               <div class="pills win">
-                <label class="pill-opt"><input type="radio" name="time" value="08:00–10:00"><span class="box">08–10</span></label>
-                <label class="pill-opt"><input type="radio" name="time" value="10:00–12:00" checked><span class="box">10–12</span></label>
-                <label class="pill-opt"><input type="radio" name="time" value="12:00–14:00"><span class="box">12–14</span></label>
-                <label class="pill-opt"><input type="radio" name="time" value="14:00–16:00"><span class="box">14–16</span></label>
-                <label class="pill-opt"><input type="radio" name="time" value="16:00–18:00"><span class="box">16–18</span></label>
-                <label class="pill-opt"><input type="radio" name="time" value="18:00–20:00"><span class="box">18–20</span></label>
+                <label class="pill"><input type="radio" name="time" value="08:00–10:00"><span class="box">08–10</span></label>
+                <label class="pill"><input type="radio" name="time" value="10:00–12:00" checked><span class="box">10–12</span></label>
+                <label class="pill"><input type="radio" name="time" value="12:00–14:00"><span class="box">12–14</span></label>
+                <label class="pill"><input type="radio" name="time" value="14:00–16:00"><span class="box">14–16</span></label>
+                <label class="pill"><input type="radio" name="time" value="16:00–18:00"><span class="box">16–18</span></label>
+                <label class="pill"><input type="radio" name="time" value="18:00–20:00"><span class="box">18–20</span></label>
               </div>
             </div>
-            <div class="field">
+            <div class="fld">
               <label class="lbl" for="postal">Postal code</label>
               <input type="text" id="postal" name="postal_code" inputmode="numeric" pattern="[0-9]{5}" placeholder="08003" maxlength="5" autocomplete="postal-code" required>
               <p class="err" id="err2">We need a date and a 5-digit postal code (08xxx) to check availability.</p>
             </div>
           </fieldset>
 
-          <!-- STEP 3 · minimal contact -->
           <fieldset data-step="3" hidden>
             <div class="summary" id="summary"></div>
-            <div class="field">
+            <div class="fld">
               <label class="lbl" for="name">Name</label>
               <input type="text" id="name" name="name" autocomplete="name" placeholder="Marta" required>
             </div>
-            <div class="field">
+            <div class="fld">
+              <label class="lbl" for="notes">Anything we should know? <span class="q-soft">· optional</span></label>
+              <textarea id="notes" name="notes" rows="2" placeholder="Pets, keys, parking, focus areas…"></textarea>
+            </div>
+            <div class="fld">
               <label class="lbl" for="phone">WhatsApp or email</label>
               <input type="text" id="phone" name="contact" autocomplete="tel" placeholder="+34 600 000 000 or marta@email.com" required>
               <p class="assure">Tap "Request my clean" and we'll open WhatsApp with everything filled in — just hit send.</p>
@@ -129,67 +243,46 @@
             </div>
           </fieldset>
 
-          <!-- DONE -->
           <fieldset data-step="4" hidden>
             <div class="done">
-              <div class="badge">✓</div>
+              <div class="seal"><svg width="20" height="16" viewBox="0 0 22 17" fill="none"><path d="M2 8.5 8 14.5 20 2.5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
               <h3>One tap to go</h3>
-              <p id="doneMsg">A WhatsApp window just opened with your details filled in — hit send and we'll confirm your slot, usually within the hour. Nothing is charged until you approve.</p>
+              <p id="doneMsg">A WhatsApp window just opened with your details filled in — hit send and we'll confirm your slot, usually within the hour.</p>
+              <button class="ghost" type="button" id="resendBtn">WhatsApp didn't open?</button>
             </div>
           </fieldset>
 
-        </div>
-
-        <div class="card-foot" id="cardFoot">
-          <div class="price-block">
-            <div class="k">TOTAL</div>
-            <div><span class="v" id="price">€39</span></div>
-          </div>
-          <button class="btn" type="button" id="nextBtn">Continue <svg class="arr" width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1L14 5.5L9 10M14 5.5H0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
         </div>
         <input type="hidden" name="summary_text" id="summaryText">
         <input type="hidden" name="source" id="sourceField">
       </form>
     </div>
 
-    <div class="trust">
-      <span class="tag-plain">Fast booking</span>
-      <span class="separator">·</span>
-      <span class="tag-plain">Fixed price</span>
-      <span class="separator">·</span>
-      <span class="tag-plain">Free cancel 24h</span>
-    </div>
-  </div>
-</section>
+    <p class="trustline center">Fast booking · Fixed price · Free cancel 24h</p>
+  </section>
 
-<section class="how" id="process">
-  <div class="wrap">
-    <h2>How it works</h2>
-    <div class="grid3">
-      <div class="tile-c"><div class="n">01 · BOOK</div><h3>A minute, no account</h3><p>Pick your flat size and clean type. The full price is on screen before you type a single letter.</p></div>
-      <div class="tile-c"><div class="n">02 · CONFIRM</div><h3>We reply within the hour</h3><p>You get a WhatsApp confirming your slot with a secure payment link. Nothing is charged before that.</p></div>
-      <div class="tile-c"><div class="n">03 · RELAX</div><h3>Come home to clean</h3><p>Your cleaner arrives in the window with everything they need, and messages you when it's done.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="faq" id="faqs">
-  <div class="wrap">
-    <h2>Fair questions</h2>
-    <details><summary>When do I pay?</summary><p>After we confirm your slot. You'll get a secure payment link by WhatsApp or email — pay it and you're booked. Never cash, never on the day.</p></details>
-    <details><summary>Is the price really fixed?</summary><p>Yes. The price you see at booking is the price you pay — VAT included. If your flat needs more time than expected, that's on us, not you.</p></details>
-    <details><summary>What if I'm not happy with the clean?</summary><p>Tell us within 48 hours on the same WhatsApp chat — we'll sort it out directly with you.</p></details>
-    <details><summary>Do I need to be home?</summary><p>No — most clients aren't. Leave key instructions in the confirmation chat and we'll take it from there.</p></details>
-    <details><summary>Can I cancel or move my booking?</summary><p>Free up to 24 hours before your window, from the same WhatsApp chat.</p></details>
-  </div>
-</section>
 </main>
+</div>
 
-<a class="wa" href="https://wa.me/34600000000?text=Hola!%20I%27d%20like%20to%20book%20a%20clean" target="_blank" rel="noopener"><span class="d"></span>Questions? WhatsApp us</a>
-
-<footer>
-  <div class="wrap">CleanCleaning · Barcelona · <a href="mailto:hola@cleancleaning.es">hola@cleancleaning.es</a></div>
-</footer>
+<!-- bottom: tabs + price, nothing else -->
+<div class="dock" id="dock">
+  <div class="dock-action">
+    <div class="inner">
+      <div class="price-block">
+        <span class="k">Total · VAT included</span>
+        <span class="v" id="price" aria-live="polite"><i class="pv">€39</i></span>
+      </div>
+      <button class="btn" type="button" id="nextBtn">Continue
+        <svg class="arr" width="15" height="11" viewBox="0 0 15 11" fill="none"><path d="M9 1L14 5.5L9 10M14 5.5H0" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="seg" role="tablist" aria-label="Sections">
+    <span class="ind" id="dockInd" aria-hidden="true"></span>
+    <button class="dock-btn" id="tab-info" role="tab" aria-selected="true" aria-controls="panel-info" data-tab="info">Info</button>
+    <button class="dock-btn" id="tab-book" role="tab" aria-selected="false" aria-controls="panel-book" data-tab="book">Book</button>
+  </div>
+</div>
 
 <script src="script.js" defer></script>
 </body>
